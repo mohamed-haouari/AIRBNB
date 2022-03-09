@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import LargeCard from '../components/LargeCard';
 import MediumCard from '../components/MediumCard';
 import SmallCrad from '../components/SmallCrad';
 
@@ -27,7 +28,12 @@ export default function Home( {exploreData , cardData } ) {
          {cardData?.map(({img ,title }) => (<MediumCard key={img} img={img} title={title} />))}
          </div>
         </section>
-
+      <LargeCard 
+      img="https://links.papareact.com/4cj"
+      title="The Great Place"
+      description="Airbnb"
+      buttonText="Here we go !"
+      />
     </main>
 
     </div>
